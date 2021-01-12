@@ -1,0 +1,153 @@
+:root {
+	--size: 13px;
+
+	/* Ignore this... */
+	--tab-min-width: 200px;
+	/* --lwt-accent-color: var(--bg) !important; */
+	--tabs-border-color: transparent !important;
+	/* --notification-background: var(--bg) !important; */
+}
+
+/*
+	Remove this if you're not a weirdo like me
+	FYI: I have all my titlebars removed. This removed the small margin that Firefox still leaves back
+
+	In most cases remove this (.titlebar-buttonbox.titlebar-color) property ↓
+*/
+
+.titlebar-buttonbox.titlebar-color { 
+	display: none; 
+} 
+
+/*
+	Sets global properties
+
+	You might wonder
+	"Why in the absolute living fuck would you wanna apply something to everything, it's slow, it's bad practice, and you should probably just kill yourself"
+
+	Well dear person who's an idiot, I'm not gonna go around finding the class, id and what not to everything that's need one of these properties, I have a life, if you knew me you wouldn't think so but that's unimportant.
+
+	So to answer your question laziness and in the grand scheme of things this hardly changes anything performance wise, at least that's my guess... But idk...
+
+	Also if it is such a big fucking issue you're welcome to fix it yourself! :)
+*/
+* {
+	font-weight: 700;
+	border:none !important;
+	box-shadow: none !important;
+}
+
+/* Stuff that needs to be removed or not displayed */
+#navigator-toolbox #back-button, #navigator-toolbox #forward-button, #navigator-toolbox toolbarspring, #navigator-toolbox .tab-line, #navigator-toolbox #pageActionButton, #navigator-toolbox .urlbar-history-dropmarker, #navigator-toolbox #tracking-protection-icon-container, #navigator-toolbox #identity-box, #navigator-toolbox .tab-close-button, #navigator-toolbox #tabs-newtab-button, #navigator-toolbox .tabbrowser-tab::after, .titlebar-spacer, #webrtcIndicator, .urlbarView-favicon, #navigator-toolbox #pageActionSeparator, #navigator-toolbox .tabbrowser-tab .tab-icon-image, #tabbrowser-arrowscrollbox:not([scrolledtostart])::part(overflow-start-indicator), ::part(overflow-end-indicator), #alltabs-button, #tabbrowser-arrowscrollbox::part(scrollbutton-up), #tabbrowser-arrowscrollbox::part(scrollbutton-down), #navigator-toolbox .tabbrowser-tab[selected='true'] .tab-icon-image, .bookmark-item .toolbarbutton-icon, #statuspanel, .tab-loading-burst {
+	display: none !important;
+}
+
+#navigator-toolbox #nav-bar, .titlebar-buttonbox-container, #navigator-toolbox .toolbar-items, .findbar-container, #navigator-toolbox #nav-bar-customization-target, #navigator-toolbox .toolbarbutton-1, #navigator-toolbox #_d7742d87-e61d-4b78-b8a1-b469842139fa_-browser-action, #navigator-toolbox #_54e2eb33-18eb-46ad-a4e4-1329c29f6e17_-browser-action, #navigator-toolbox #PanelUI-button, #navigator-toolbox #PanelUI-menu-button, #navigator-toolbox #downloads-button, #navigator-toolbox .tab-background, #toolbar-menubar, #PersonalToolbar, .browserStack, #toolbar, .devtools-tabbar, .devtools-horizontal-splitter, .devtools-side-splitter {
+	background: initial !important; 
+	border-color: transparent !important;
+}
+
+menu, #navigator-toolbox .tabbrowser-tab .tab-label, .bookmark-item, .findbar-textbox {
+	transition: 0.3s color ease-in-out;
+}
+
+#navigator-toolbox #PanelUI-button, ::placeholder {
+	opacity: 1 !important;
+}
+
+
+.bookmark-item, #navigator-toolbox #
+-container {
+	margin: 0px 5px !important;
+}
+
+#navigator-toolbox #urlbar-container {
+	padding: 0 !important;
+}
+
+#navigator-toolbox #urlbar {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+#navigator-toolbox #PanelUI-button {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#navigator-toolbox #nav-bar {
+	box-shadow: none !important;
+}
+
+#navigator-toolbox #tracking-protection-icon-container {
+	padding-right: 0 !important;
+}
+
+#fullscr-toggler {
+	height: 0 !important;
+}
+
+#navigator-toolbox #urlbar {
+	height: 20px;
+	padding: 0 !important;
+	font-size: var(--size);
+	padding-left: 1ch !important;
+}
+
+#navigator-toolbox #urlbar-background {
+	margin: 0 !important;
+}
+
+#navigator-toolbox .toolbarbutton-1 {
+	background: transparent;
+}
+
+#navigator-toolbox .toolbarbutton-1 {
+	width: 28px;
+}
+
+#navigator-toolbox .tabbrowser-tab[fadein] {
+	text-align: center;
+	font-size: var(--size);
+	max-width: 100% !important;
+	padding: 0px 20px 0px 20px;
+}
+
+#navigator-toolbox .tabbrowser-tab[selected='true'] .tab-icon-image {
+	width: 16px;
+	height: 16px !important;
+}
+
+#navigator-toolbox .tab-background {
+	box-shadow: none !important;
+}
+
+#navigator-toolbox .tab-background {
+	margin:15px;
+}
+
+#tabbrowser-tabs, #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+	min-height: 0 !important;
+}
+
+.tabbrowser-tab::after {
+	opacity: 0 !important; 
+}
+
+.tab-stack {
+	margin: 5px;
+}
+
+.findbar-textbox[status="notfound"] {
+	background-color: transparent !important;
+}
+
+.tab-label-container {
+	display: flex;
+	justify-content: center;
+}
+
+.tab-content {
+	overflow: hidden;
+	position: relative;
+}
